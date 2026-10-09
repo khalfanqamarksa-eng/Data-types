@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+days= ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+scores= [70, 85, 60, 90, 95]
+plt.plot(days,scores)
+plt.show()
+plt.title('My Score Tracker')
+plt.xlabel('Days of the Week')
+plt.ylabel('Scores')
+plt.grid(True)
+plt.ylim(0, 100)
+plt.show()
+plt.plot(days,scores, color='blue', marker='o', linestyle='dashed', linewidth=2)
+plt.title('My Score Tracker')
+plt.xlabel('Days of the Week')
+plt.ylabel('Scores')
+plt.grid(True)
+plt.ylim(0, 100)
+plt.show()
+
+plt.bar(days, scores, color='orange')
+plt.title('My Score Tracker')
+plt.xlabel('Days of the Week')
+plt.ylabel('Scores')
+plt.ylim(0, 100)
+plt.show()
